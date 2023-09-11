@@ -1,7 +1,29 @@
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
 img {
     width: 300px;
+}
+
+.logo {
+    background-color: #1f2937;
+    color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
 }
