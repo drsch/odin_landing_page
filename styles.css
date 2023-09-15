@@ -40,12 +40,15 @@ ul{
 .hero {
     border: solid green;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
+    flex-grow:0;
 }   
 
 .logo-img {
     display: flex;
-    flex-basis: 600px;
+    flex-basis: 1200px;
+    flex-grow: 1;
+    flex-shrink:0;
 }
 
 .body_text {
@@ -59,4 +62,17 @@ button {
     color: white;
     align-self: flex-start;
     padding: 2px 16px;
+}
+
+.body2{
+    border:solid purple;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.body_container {
+    border: solid pink;
+    display: flex;
+    justify-content: center;
 }
