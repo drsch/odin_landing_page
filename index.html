@@ -6,55 +6,76 @@
     <title>Odin Project Landing Page Assignment</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
+
+
 <body>
-   <div class="logo">
-    Header Logo
-        <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
-        </ul>
-   </div>
-   
-   <div class="body">
-        <div class="hero">
-            <div class="body_text">This website is awesome</div>
-            <div class="body_text2">This website has some subtex that goes here under the main title. It's a smaller font and the color is lower contrast.</div>
-            <button>Sign up</button>
+<!--Logo and Nav Links-->
+    <header>
+        <nav>
+            <div class="h_logo">Header Logo</div>
+                <ul>
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">header link two</a></li>
+                    <li><a href="#">header link three</a></li>
+                </ul>
+        </nav>
+    </header>
+<!--"This website is awesome" text and main image-->
+    <main>
+        <div class="hero_background">
+            <section class="hero">
+                <div class="h_left">
+                    <div class="h_text_large">This website is awesome</div>
+                    <div class="h_text_small">This website has some subtex that goes here under the main title. It's a smaller font and the color is lower contrast.</div>
+                    <button class="h_button">Sign up</button>
+                </div>
+                <div class="logo_img"><img src="./logo.jpg" alt="The Beach" width="600"></div>
+            </section>
         </div>
-        <div class="logo_img"><img src="./logo.jpg" alt="The Beach" width="600"></div>
-   </div>
-   
-   <div class="body2">
-    Some random information
-        <div class="body_container">
-            <div class="info">
-                <img src="./images/fruit1.jpg" alt="fruit3">
-                <div class="text">this is fruit No. 1</div>
+ <!--Info cards-->       
+        <section class="info">
+            <h1>Some random information</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="./images/fruit1.jpg" alt="fruit3">
+                    <div class="c_text">this is fruit No. 1 with additional text that is going to fill up space so I can check if this is working or not.</div>
+                </div>
+                <div class="card">
+                    <img src="./images/fruit2.jpg" alt="fruit3">
+                    <div class="c_text">this is fruit No. 2 with additional text that is going to fill up space so I can check if this is working or not.</div>
+                </div>
+                <div class="card">
+                    <img src="./images/fruit3.jpg" alt="fruit3">
+                    <div class="c_text">this is fruit No. 3 with additional text that is going to fill up space so I can check if this is working or not.</div>
+                </div>
+                <div class="card">
+                    <img src="./images/fruit4.jpg" alt="fruit4">
+                    <div class="c_text">this is fruit No. 4 with additional text that is going to fill up space so I can check if this is working or not.</div>
+                </div>
             </div>
-            <div class="info">
-                <img src="./images/fruit2.jpg" alt="fruit3">
-                <div class="text">this is fruit No. 2</div>
-            </div>
-            <div class="info">
-                <img src="./images/fruit3.jpg" alt="fruit3">
-                <div class="text">this is fruit No. 3</div>
-            </div>
-            <div class="info">
-                <img src="./images/fruit4.jpg" alt="fruit4">
-                <div class="text">this is fruit No. 4</div>
-            </div>
+        </section>
+        
+<!--quote-->
+        <div class="quote">
+            <div class="quote_text">This is an inspiring quote or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+            <div class="quote_attribute">Thor, God of Thunder</div>
         </div>
-    </div>
-    <div class="body3">
-        <div class="quote">This is an inspiring quote or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
-        <div class="quote2">Thor, God of Thunder</div>
-    </div>
-    <div class="body4">
-        <div class="body4_text">Call to action! It's time!</div>
-        <div class="body4_text1">Sign up for our product by clicking that button right over there!</div>
-        <button>Sign up</button>
-    </div>
-    <div class="copyright">Copyright &copy The Odin Project 2021</div>
+        
+        <section class="call_to_action">
+            <div class="cta">
+                <div class="cta_text">
+                    <div class="cta_l">Call to action! It's time!</div>
+                    <div class="cta_s">Sign up for our product by clicking that button right over there!</div>
+                </div>
+                <button class="cta_button">Sign up</button>
+            </div>
+            </section>
+    </main>
+
+<!--Copyright-->
+    <footer>
+        <div class="copyright">Copyright &copy The Odin Project 2021</div>
+    </footer>
+
 </body>
 </html>
