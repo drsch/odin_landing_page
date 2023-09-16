@@ -1,54 +1,72 @@
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
+    font-family: "roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    width: 300px;
+a {
+    text-decoration: none;     
 }
 
-a{
+a, .h_text_small, footer {
     color: #e5e7eb;
-    text-decoration: none;
+}
+/* The header logo and the three links on the right with their styling and positions*/
+
+header, .hero_background, footer {
+    background-color:#1f2937;
 }
 
-ul{
+nav, .hero, .copyright {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;     
+}
+
+.cards, .cta, .quote_text, .quote_attribute {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+ul {
     list-style-type: none;
     display: flex;
     gap: 32px;
 }
-.logo,.body{
-    background-color: #1f2937;
-    color: #eeeeee;
+.hero_background {
+    padding: 36px 0px;
 }
 
-.logo {
-    padding: 8px 16px;
+.h_logo {
+    font-size: 24px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.body {
-    border: solid red;
+.h_logo, .h_text_large, .cta {
+    color: #f9faf8;
+}
+
+/* "This website is awesome" text and the hero image*/
+.hero {
     display: flex;
     justify-content: center;
-}
-
-.hero {
-    border: solid green;
-    display:flex;
-    flex-direction:column;
-    flex-grow:0;
 }   
 
-.logo-img {
-    display: flex;
-    flex-basis: 1200px;
-    flex-grow: 1;
-    flex-shrink:0;
+.h_text_large {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.h_text_small {
+    font-size: 18px;
 }
 
 .body_text {
@@ -56,23 +74,91 @@ ul{
     font-weight: 900;
 }
 
-button {
+.h_button {
     background-color: #3882f6;
-    border-color: white;
     color: white;
+    border: 0px;
     align-self: flex-start;
-    padding: 2px 16px;
+    border-radius: 8px;
+    padding: 4px 32px;
+    margin-top: 24px;
 }
 
-.body2{
-    border:solid purple;
+/*Info Cards */
+.info {
     display: flex;
-    flex-direction:column;
+    flex-flow: column;
     align-items: center;
 }
 
-.body_container {
-    border: solid pink;
+.cards {
+    display: flex;   
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 8px;
+    padding-bottom: 16px;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0px 32px;
+    
+}
+
+/*Quote Box*/
+.quote {   
+    background-color: #e5e7eb;
+    display: flex;
+    flex-flow: column;
+    padding: 100px 32px;
+}
+.quote_text {
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.quote_attribute {
+    display: flex;
+    align-self: flex-end;
+    font-weight: 900;
+}
+
+/*Call to Action*/
+
+.cta {
+    background-color: #3882f6;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta_text {
+    display: flex;
+    flex-flow: column;
+}
+
+.cta_l {
+    font-weight: 900;
+}
+.cta_button {
+    background-color: #3882f6;
+    color: white;
+    border: 0px;
+    align-self: flex-start;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 4px 32px;
+}
+
+/* copyright */
+footer {
     display: flex;
     justify-content: center;
+    padding: 16px 0;
 }
